@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>playAir</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+<script src="js/style.js"></script>
+<script>
+	$(function(){
+		var height=$(window).height();
+		var width=$(window).width();
+		$('#canvas').css("height",height);
+		$('#canvas').css("width",width);
+	})
+</script>
+<style>
+html,body{
+	margin: 0 auto;
+	padding: 0 auto;
+}
+.test{
+	background-image: url(images/bg.jpg);
+	background-size: 100% 100%;
+}
+canvas{
+	opacity: 0.75;
+}
+</style>
+</head>
+
+<body class="test">
+    <canvas id="canvas" width="350px" height="600px"></canvas>
+</body>
+</html>
